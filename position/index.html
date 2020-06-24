@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Positiion</title>
+    <style>
+      /* styling to body and html is because remove default value in browser. */
+      body, html {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        height: 400%;
+        background-color: red;
+      }
+      #boxOne {
+        height: 300px;
+        width: 300px;
+        background-color: yellow;
+        position: static;
+        /* default position of box element is static. */
+        /* It stands followed you set. */
+      }
+      #boxTwo {
+        height: 300px;
+        width: 300px;
+        background-color: green;
+        position: fixed;
+      }
+      /* position: fixed */
+      /* position: absolute is similar to fixed, but different. */
+      /* absolute can't be seen to whenever scroll. */
+      /* if parent element's position is not relative, absolute position follows body tag. */
+      /* if parent's position is declared relative, absolute get criterion to parent element. */
+      .abs-box {
+        width: 400px;
+        height: 400px;
+        background-color: yellow;
+        position: relative;
+      }
+      .abs-child {
+        width: 300px;
+        height: 300px;
+        background-color: blue;
+        right: 10px;
+        /* position: absolute; */
+      }
+      .abs-child-child {
+        width: 100px;
+        height: 100px;
+        background-color: green;
+        position: absolute;
+        right: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div id="boxOne">
+      <div class="box-child"></div>
+    </div>
+    <div id="boxTwo">
+      <div class="box-child"></div>
+    </div> -->
+    <div class="abs-box">
+      <div class="abs-child">
+        <div class="abs-child-child"></div>
+      </div>
+    </div>
+  </body>
+</html>
