@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>inline vs block vs inline-block</title>
+    <style>
+      .box {
+        background-color: red;
+        width: 200px;
+        height: 200px;
+        border: 2px solid black;
+        /* display: block; */
+        /* display: inline-block; */
+        /* display: inline; */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- block element don't allow to exist something on left and right side. -->
+    <!-- something is positioned on bottom of block element. -->
+    <!-- On the other hand, inline-block element allows to put something beside it. -->
+    <!-- div tag has default display property block. -->
+    <!-- inline option of display property considers to text element not box. -->
+    <!-- So, set options for box are inefficient. There are no width and height of box. -->
+    <!-- (ex. the height of content follows text-size even if you set height property) -->
+    <div class="box">1</div>
+    <div class="box">1</div>
+    <div class="box">1</div>
+  </body>
+</html>
