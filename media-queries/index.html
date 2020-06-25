@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Queries</title>
+    <style>
+      body {
+        height: 100vh;
+        background-color: seagreen;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: background-color 0.5s ease-in-out;
+      }
+      div {
+        transition: 0.5s ease-in-out;
+      }
+      @media screen and (min-width: 320px) and (max-width: 640px) {
+        body {
+          background-color: skyblue;
+        }
+        div {
+          color: white;
+          transform: scale(2, 2);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div>Hello, World!!!!</div>
+  </body>
+</html>
