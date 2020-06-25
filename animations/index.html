@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animations</title>
+  </head>
+  <style>
+    body {
+      height: 300px;
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: space-around;
+      align-items: center;
+    }
+    .box {
+      width: 100px;
+      height: 100px;
+      background: mediumaquamarine;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* 무한 반복 시, infinite 추가 */
+      animation: 1.5s scaleAndRotateSquare infinite ease-in-out;
+    }
+    .box2 {
+      width: 100px;
+      height: 100px;
+      background: mediumaquamarine;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      animation: 1.5s scaleAndRotateSquare2 infinite ease-in-out;
+    }
+
+    /* @keyframes 애니메이션이름 */
+    @keyframes scaleAndRotateSquare {
+      /* 단계를 2개만 하고 싶을 때 */
+      from {
+        transform: none;
+      }
+      to {
+        transform: rotate(1turn) scale(0.5, 0.5);
+      }
+    }
+    @keyframes scaleAndRotateSquare2 {
+      /* 단계를 3개 이상으로 하고 싶을 때 */
+      0% {
+        transform: none;
+      }
+      50% {
+        transform: rotate(1turn) scale(0.5, 0.5);
+        color: white;
+      }
+      100% {
+        transform: none;
+      }
+    }
+  </style>
+  <body>
+    <div class="box">
+      BOX
+    </div>
+    <div class="box2">
+      BOX
+    </div>
+  </body>
+</html>
