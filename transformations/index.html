@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transforms</title>
+    <style>
+      body {
+        height: 300px;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        background: mediumaquamarine;
+        transition: transform 1s ease-in-out;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .box:hover {
+        transform: scale3d(2.5, 1.2, 0.3);
+      }
+      .box2 {
+        width: 100px;
+        height: 100px;
+        background: mediumaquamarine;
+        transition: transform 1s ease-in-out;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .box2:hover {
+        transform: rotate(1turn) scale(0.5, 0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      BOX
+    </div>
+    <div class="box2">
+      BOX
+    </div>
+  </body>
+</html>
