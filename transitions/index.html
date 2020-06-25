@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transitions</title>
+    <style>
+      body {
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+      }
+      body > * {
+        width: 300px;
+      }
+      .all {
+        background-color: green;
+        color: white;
+        transition: all 2s ease-in-out;
+      }
+
+      .all:hover {
+        background-color: yellow;
+        color: black;
+      }
+      .background-color {
+        background-color: green;
+        color: white;
+        transition: background-color 2s ease-in-out;
+      }
+
+      .background-color:hover {
+        background-color: yellow;
+        color: black;
+      }
+      .color {
+        background-color: green;
+        color: white;
+        transition: color 2s ease-in-out;
+      }
+
+      .color:hover {
+        background-color: yellow;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <span class="all">
+      Transition All!!
+    </span>
+    <br />
+    <span class="background-color">
+      Transition only background-color!!!
+    </span>
+    <br />
+    <span class="color">
+      Transition only color!!!!
+    </span>
+  </body>
+</html>
